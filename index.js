@@ -23,7 +23,7 @@ function MpdAccessory(log, config) {
     host: this.host,
   });
 
-  this.service = new Service.Switch(this.name);
+  this.service = new Service.Lightbulb(this.name);
 
   this.service
     .getCharacteristic(Characteristic.On)
